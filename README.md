@@ -622,7 +622,7 @@ We need to generate SSH keys which are going to be used by GitHub to authenticat
 Open a terminal and copy-paste this command, replacing the email with **yours** (the same one you used to create your GitHub account).
 
 ```bash
-mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
+mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "firstName.lastName@solution-bi.com"
 ```
 
 It will prompt for information. Just press enter until it asks for a **passphrase**.
@@ -676,20 +676,19 @@ echo $GITHUB_USERNAME
 You should see your GitHub username printed. If it's not the case, **stop here** and ask for help.
 There seems to be a problem with the previous step (`gh auth`).
 
-Check the emails registered with your GitHub Account. You'll need to pick one
-at the next step:
+Check the emails registered with your GitHub Account. You'll need to pick one at the next step:
 
 ```bash
 gh api user/emails | jq -r '.[].email'
 ```
 
-Copy the following commands but put your personal name and your email.
+Copy-paste the following command, replacing the first name, last name and email with **yours**.
 
 ☝️ Be careful you **need** to put one of the email listed above thanks to the previous `gh api ...` command.
 
 ```bash
-git config --global user.email "peter.calloway@solution-bi.com"
-git config --global user.name "Peter Mac Calloway"
+git config --global user.email "firstName.lastName@solution-bi.com"
+git config --global user.name "FirstName LastName"
 ```
 Please now **quit** all your opened terminal windows.
 
