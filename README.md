@@ -868,23 +868,13 @@ Now, check you can launch a notebook server on your machine:
 jupyter notebook
 ```
 
-Your web browser should open on a `jupyter` window:
-
-![jupyter.png](images/jupyter.png)
-
-Click on `New`:
-
-![jupyter_new.png](images/jupyter_new.png)
-
-A tab should open on a new notebook:
-
-![jupyter_notebook.png](images/jupyter_notebook.png)
+Your web browser should open on a `jupyter` window. Click on `New`. A tab should open on a new notebook.
 
 ### `nbextensions` check up
 
 Perform a sanity check for `jupyter notebooks nbextensions`. Click on `Nbextensions`:
 
-![jupyter_nbextensions.png](images/jupyter_nbextensions.png)
+![jupyter_nbextensions.png](https://github.com/lewagon/setup/blob/master/images/jupyter_nbextensions.png)
 
 Untick _"disable configuration for nbextensions without explicit compatibility"_ then check that _at least_ all `nbextensions` circled in red are enabled:
 
