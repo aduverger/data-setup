@@ -658,13 +658,9 @@ Programmers love to refine and polish their shell and tools. We'll start with a 
 
 - Copy the content of the `gitconfig`, `aliases`, `profile`, `zprofile`, `zshrc` files into `~/.gitconfig`, `~/.aliases`, `~/.profile`, `~/.zprofile`, `~/.zshrc`.
 
-- *TIPS*: You can easily modify or create a file by running the following command, for e.g. `code ~/.aliases`
+- If some of these files do not exist on your computer, just create them. *TIPS*: You can easily modify or create a file by running the following command, for e.g. `code ~/.aliases`
 
 - Copy the content of the `keybindings.json` and `settings.json` files into `~/.vscode-server/data/Machine/keybindings.json` and `~/.vscode-server/data/Machine/settings.json`
-
-- Copy the content of `config` into `~/.ssh/config`.
-
-If some of these files do not exist on your computer, just create them.
 
 Then, open your terminal and run the following command:
 
