@@ -2,7 +2,7 @@
 
 You will find below the instructions to set up you computer for Data Science 🔥
 
-It comes mostly from [Le Wagon Data Science course](https://www.lewagon.com/data-science-course/full-time) 🙏
+It comes mostly from [Le Wagon Data Science bootcamp](https://github.com/lewagon/data-setup/blob/master/WINDOWS.md) 🙏
 
 Please **read them carefully and execute all commands in the following order**. If you get stuck, don't hesitate to ask for help 🙋‍♀️
 
