@@ -564,6 +564,20 @@ At the end your terminal should look like this:
 
 ❌ Otherwise, please ask for help.
 
+### Zsh-syntax-highlighting plugin
+
+In a terminal execute the following command:
+
+```bash
+export CURRENT_DIR=`pwd`
+export ZSH_PLUGINS_DIR="$HOME/.oh-my-zsh/custom/plugins"
+mkdir -p "$ZSH_PLUGINS_DIR" && cd "$ZSH_PLUGINS_DIR"
+if [ ! -d "$ZSH_PLUGINS_DIR/zsh-syntax-highlighting" ]; then
+  git clone https://github.com/zsh-users/zsh-autosuggestions
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting
+fi
+cd "$CURRENT_DIR"
+```
 
 ## GitHub CLI
 
@@ -811,11 +825,7 @@ Let's try to run Jupyter:
 jupyter notebook
 ```
 
-This command should have opened a Jupyter page in your browser:
-
-![](images/wsl_jupyter_notebook.png)
-
-If it is not the case, please ask for help.
+This command should have opened a Jupyter page in your browser. If it is not the case, please ask for help.
 
 To stop the Jupyter server in the terminal, press `Ctrl` + `C`, enter y, then press Enter.
 
@@ -872,27 +882,20 @@ Now, check you can launch a notebook server on your machine:
 jupyter notebook
 ```
 
-Your web browser should open on a `jupyter` window:
+Your web browser should open on a `jupyter` window.
 
-![jupyter.png](images/jupyter.png)
+Click on `New`. A tab should open on a new notebook
 
-Click on `New`:
-
-![jupyter_new.png](images/jupyter_new.png)
-
-A tab should open on a new notebook:
-
-![jupyter_notebook.png](images/jupyter_notebook.png)
 
 ### `nbextensions` check up
 
 Perform a sanity check for `jupyter notebooks nbextensions`. Click on `Nbextensions`:
 
-![jupyter_nbextensions.png](images/jupyter_nbextensions.png)
+![jupyter_nbextensions.png](img/nbextensions1.png)
 
 Untick _"disable configuration for nbextensions without explicit compatibility"_ then check that _at least_ all `nbextensions` circled in red are enabled:
 
-![nbextensions.png](images/nbextensions.png)
+![nbextensions.png](img/nbextensions2.png)
 
 You can close your web browser then terminate the jupyter server with `CTRL` + `C`.
 
@@ -966,22 +969,6 @@ In order to convert a Windows path to and from an Ubuntu path:
 - In particular, the `wslpath -w $(pwd)` command returns the Windows path of the current Ubuntu directory
 
 ![How to access a Windows path from Ubuntu terminal](https://github.com/lewagon/setup/blob/master/images/windows_path_from_terminal.png)
-
-### Pin apps to your taskbar
-
-You are going to use most of the apps you've installed today really often. Let's pin them to your taskbar so that they are just one click away!
-
-To pin an app to your taskbar, launch the app, right-click on the icon in the taskbar to bring up the context menu and choose "Pin to taskbar".
-
-![How to pin an app to the taskbar in Windows](https://github.com/lewagon/setup/blob/master/images/windows_taskbar.png)
-
-You must pin:
-- Your terminal
-- Your file explorer
-- VS Code
-- Your Internet browser
-- Slack
-- Zoom
 
 
 ## Visual C++ Redistributable
